@@ -29,7 +29,7 @@ class BankAccount:
         #The specified file naming format requires including the user's name, account type, and user ID, ensuring adherence to a particular pattern.
         self.__accountNumber= random.randint(1000, 10000)
         self.__filename=str(self.__accountNumber)+"_"+self.__accountType+"_"+self.__userName+".txt"
-        self.__transactionFile = open(self.__filename, "w")
+        self.__transactionFile = open(self.__filename, "a")
         self.createAccount();
     
     #Creating an Account.
